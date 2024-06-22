@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* header nav footer------------------------------ */
+.bg_nav {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    backdrop-filter: blur(10px);
+}
+
+.nutDangKy {
+    padding: 10px 30px;
+    background-color: #f97316;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.nutDangKy:hover {
+    background-color: #d93402;
+}
+
+.nutXem {
+    padding: 10px 30px;
+    background-color: white;
+    color: #f97316;
+    border: 1px solid #f97316;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.nutXem:hover {
+    background-color: #d93402;
+    color: white;
+    border: 1px solid #f97316;
+}
+
+/* ẨN QUẢNG CÁO Ở TRANG NEWS -------------------------------------------------*/
+.QuangCaoNewAn {
+    display: block;
+}
+.QuangCaoNewHien {
+    display: none;
+}
+@media screen and (max-width: 1023px) {
+    .QuangCaoNewAn {
+        display: none;
+    }
+    .QuangCaoNewHien {
+        display: block;
+    }
+}
+
+/* TRANG MUA BIB CLICK CÁC THẺ -------------------------------------------------*/
+.form_BIB {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+@media screen and (max-width: 1023px) {
+    .form_BIB {
+        display: block;
+    }
+}
+
+.SSkmItem {
+    cursor: pointer;
+    background-color: #ffaa6d;
+    color: black;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid rgb(185, 185, 185);
+    transition: all 0.5s;
+}
+.SSkmItem .CuLyHien {
+    display: block;
+}
+.SSkmItem .CuLyAn {
+    display: none;
+}
+
+.SSkmActive {
+    background-color: #d93402;
+    color: #d93402;
+    border: 1px solid #d93402;
+}
+.SSkmActive .CuLyHien {
+    display: none;
+}
+.SSkmActive .CuLyAn {
+    display: block;
+}
+
+/*------------*/
+.NhomMauItem,
+.GioiTinhItem,
+.LoaiAoItem,
+.SizeAoItem,
+.khachSanItem {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid rgb(185, 185, 185);
+    transition: all 0.5s;
+}
+.NhomMauActive,
+.GioiTinhActive,
+.LoaiAoActive,
+.SizeAoActive,
+.khachSanActive {
+    background-color: #f97316;
+    color: white;
+    border: 1px solid #d93402;
+}
+
+.SSkmItem:hover,
+.NhomMauItem:hover,
+.GioiTinhItem:hover,
+.LoaiAoItem:hover,
+.SizeAoItem:hover,
+.khachSanItem:hover {
+    background-color: #ffaa6d;
+    border: 1px solid #f97316;
+}
+
+/* BACKTOTOP -------------------------------------------------*/
+.backToTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 47px;
+    border-radius: 50%;
+
+    background-color: #f97316;
+    border: 1px solid white;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    transition: all 0.2s;
+    /* box-shadow: 5px 5px 20px #d93402; */
+
+    opacity: 0;
+    z-index: 100;
+}
+
+.backToTop:hover {
+    background-color: #d93402;
+    color: white;
+}
+
+.cd-top--is-visible {
+    opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+    .backToTop {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        /* box-shadow: 2px 2px 10px #d93402; */
+    }
+}
+
