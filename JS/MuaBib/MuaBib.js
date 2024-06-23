@@ -118,8 +118,8 @@ document.addEventListener("DOMContentLoaded", async function () {
   // tạo mấy cái div để chọn cự ly chạy
   const createDivCuLyChay = (dataSelectedItem) => {
     divTrai_divChonCuLyChay.innerHTML = `
-           <p class="text-lg font-medium mb-2">Chọn cự ly chạy</p>
-            <p class="text-center italic text-orange-500 my-2">
+           <p class="text-lg font-medium bg-stone-500 text-white rounded-lg text-center py-2 mb-1">Chọn cự ly chạy</p>
+            <p class="italic text-orange-500 text-center my-2">
               Giá Early Bird (trước ngày 15/07)
             </p>
         <div class="flex flex-row flex-wrap gap-8 p-4 xl:p-0 justify-center uppercase">
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 (distanceItem) => `
                 <div class="SSkmItem shadow-md"
                 data-distance="${distanceItem.distance}" data-distance-id="${distanceItem.id}" data-price="${distanceItem.discount_price}">
-                    <div class="p-4 bg-white rounded-t-lg">
+                    <div class="w-44 p-4 bg-white rounded-t-lg">
                         <p class="font-black text-6xl">${distanceItem.distance}<span class="text-xl">km</span></p>
                         <p class="line-through text-stone-500">${distanceItem.real_price}</p>
                         <p class="font-bold text-xl">${distanceItem.discount_price}</p>
@@ -160,7 +160,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     dataSelectedItem.map((hotelItem) => {
       const divKhachSanItem = document.createElement("div");
       divKhachSanItem.classList.add(
-        "SSKSItem",
         "grid",
         "grid-cols-2",
         "lg:grid-cols-1",
@@ -181,7 +180,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         ></div>
         <div class="">
           <div class="bg-black p-2">
-            <h5 class="text-xl md:text-2xl font-bold text-white" data-name-hotel="${hotelItem.name}">
+            <h5 class="text-xl md:text-2xl font-bold" data-name-hotel="${hotelItem.name}">
               ${hotelItem.name}
             </h5>
             <p>
@@ -192,7 +191,7 @@ document.addEventListener("DOMContentLoaded", async function () {
               <i class="fa-solid fa-star"></i>
             </p>
           </div>
-          <div class="text-sm text-black py-4">
+          <div class="text-sm text-white py-4">
             <p class="mb-2">${hotelItem.address}</p>
             <p class="mb-2">Phòng share: ${hotelItem.rooms[0].price} VNĐ /đêm</p>
             <p class="mb-2">Phòng riêng: ${hotelItem.rooms[1].price} VNĐ /đêm</p>

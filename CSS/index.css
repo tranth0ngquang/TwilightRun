@@ -19,6 +19,7 @@
     text-transform: uppercase;
     transition: all 0.5s;
 }
+
 .nutDangKy:hover {
     background-color: #d93402;
 }
@@ -34,6 +35,7 @@
     text-transform: uppercase;
     transition: all 0.5s;
 }
+
 .nutXem:hover {
     background-color: #d93402;
     color: white;
@@ -44,13 +46,16 @@
 .QuangCaoNewAn {
     display: block;
 }
+
 .QuangCaoNewHien {
     display: none;
 }
+
 @media screen and (max-width: 1023px) {
     .QuangCaoNewAn {
         display: none;
     }
+
     .QuangCaoNewHien {
         display: block;
     }
@@ -62,24 +67,28 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+
 @media screen and (max-width: 1023px) {
     .form_BIB {
         display: block;
     }
 }
 
+
 .SSkmItem {
     cursor: pointer;
-    background-color: #ffaa6d;
+    background-color: #a89f98;
     color: black;
     border-radius: 0.5rem;
     text-align: center;
     border: 1px solid rgb(185, 185, 185);
     transition: all 0.5s;
 }
+
 .SSkmItem .CuLyHien {
     display: block;
 }
+
 .SSkmItem .CuLyAn {
     display: none;
 }
@@ -89,19 +98,37 @@
     color: #d93402;
     border: 1px solid #d93402;
 }
+
 .SSkmActive .CuLyHien {
     display: none;
 }
+
 .SSkmActive .CuLyAn {
     display: block;
+}
+
+/*------------*/
+.khachSanItem {
+    cursor: pointer;
+    background-color: #a89f98;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid rgb(185, 185, 185);
+    transition: all 0.5s;
+}
+
+.khachSanActive {
+    background-color: #F97316;
+    color: #F97316;
+    border: 1px solid #d93402;
 }
 
 /*------------*/
 .NhomMauItem,
 .GioiTinhItem,
 .LoaiAoItem,
-.SizeAoItem,
-.khachSanItem {
+.SizeAoItem {
     cursor: pointer;
     background-color: white;
     color: black;
@@ -110,11 +137,11 @@
     border: 1px solid rgb(185, 185, 185);
     transition: all 0.5s;
 }
+
 .NhomMauActive,
 .GioiTinhActive,
 .LoaiAoActive,
-.SizeAoActive,
-.khachSanActive {
+.SizeAoActive {
     background-color: #f97316;
     color: white;
     border: 1px solid #d93402;
@@ -124,11 +151,19 @@
 .NhomMauItem:hover,
 .GioiTinhItem:hover,
 .LoaiAoItem:hover,
-.SizeAoItem:hover,
-.khachSanItem:hover {
+.SizeAoItem:hover {
     background-color: #ffaa6d;
     border: 1px solid #f97316;
 }
+
+
+.khachSanItem:hover {
+    background-color: #ffaa6d;
+    color: #ffaa6d;
+    border: 1px solid #F97316;
+}
+
+
 
 /* BACKTOTOP -------------------------------------------------*/
 .backToTop {
@@ -174,3 +209,41 @@
     }
 }
 
+
+
+
+/* Chỉnh thông báo -------------------------------------------------*/
+/* div:where(.swal2-container) div:where(.swal2-popup){
+    background-color: #F97316 !important;
+} */
+.swal2-error{
+    border-color: #d93402 !important;
+    background-color: red !important;
+}
+
+.swal2-success-ring{
+    border-color: green !important;
+    background-color: rgba(172, 255, 47, 0.3) !important;
+}
+.swal2-success{
+    border-color: green !important;
+    background-color: greenyellow !important;
+}
+
+.swal2-success-line-tip,
+.swal2-success-line-long{
+    background-color: green !important;
+}
+
+.swal2-x-mark-line-left,
+.swal2-x-mark-line-right{
+    background-color: white !important;
+}
+.swal2-styled{
+    background-color: black !important;
+}
+.swal2-html-container,
+.swal2-title{
+    color: black !important;
+    padding: 0;
+}

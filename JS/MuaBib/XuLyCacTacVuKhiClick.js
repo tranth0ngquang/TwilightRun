@@ -17,8 +17,8 @@ export const handleClickCuLyChay = () => {
       setGlobalData("distance_id", distance_id);
       console.log("distance_id", getGlobalData("distance_id"));
 
-      divPhai_showInfo_cuLy.innerText = distance;
-      divPhai_showInfo_giaBib.innerText = price;
+      divPhai_showInfo_cuLy.innerText = distance + " km";
+      divPhai_showInfo_giaBib.innerText = price.toLocaleString() + " VNĐ";
       showTongTien();
     });
   });
@@ -34,14 +34,13 @@ const createDivChonLoaiPhong = (hotelItem) => {
       <select id="roomType" class="roomTypeSelect bg-stone-50 border border-stone-400 text-stone-900 text-sm rounded-lg block w-full p-2">
         <option value="" id="status_stay" selected>Chọn loại phòng</option>
         ${hotelItem.rooms
-          .map(
-            (room) => `
-          <option data-status-stay="${room.type}" value="${room.price}">${
-              room.type === 1 ? "Ở ghép" : "Ở riêng"
-            }</option>
+      .map(
+        (room) => `
+          <option data-status-stay="${room.type}" value="${room.price}">${room.type === 1 ? "Ở ghép" : "Ở riêng"
+          }</option>
         `
-          )
-          .join("")}
+      )
+      .join("")}
       </select>
     </div>
   `;
@@ -55,7 +54,7 @@ const createDivChonLoaiPhong = (hotelItem) => {
     setGlobalData("status_stay", value_status_stay);
     console.log("status_stay", getGlobalData("status_stay"));
     document.getElementById("divPhai_showInfo_giaKhachSan").innerText =
-      selectedPrice + " VNĐ";
+      selectedPrice.toLocaleString() + " VNĐ";
     showTongTien();
   });
 };
