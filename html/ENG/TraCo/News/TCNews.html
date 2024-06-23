@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../../img/Logo/logo-twilight.png" type="image/x-icon">
+    <title>Twilight Run</title>
+
+
+    <!-- FONT WEB GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- ICON -->
+    <!-- ICON FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICON LINE AWESOME -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+
+
+    <!-- CSS HTML-->
+    <link rel="stylesheet" href="../../../../CSS/index.css">
+
+
+
+</head>
+
+<body>
+    <!-- Header - nav -->
+
+    <!-- bg-gradient-to-br from-red-700 to-orange-600 -->
+    <nav class="bg_nav fixed z-50 w-full bg-black/80">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+
+            <!-- Khu Logo | (Trái) -->
+            <a href="../../../../html/ENG/SamSon/Home/SSHome.html"
+                class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../../../../img/Logo/logo-twilight.png" class="h-10" alt="Flowbite Logo" />
+
+                <svg id="logo-twilight-sgv" data-name="logo-twilight-sgv" xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 duration-500 fill-white hover:fill-orange-500" viewBox="0 0 1888.39 758.73">
+                    <polygon
+                        points="394.05 257.82 500.98 150.98 443.3 150.98 443.3 178.51 394.05 227.24 55.73 227.24 0 227.24 77.35 286.23 104 257.82 315.48 257.82 315.48 460.15 280.08 498.17 341.26 521.66 379.28 476.1 356.12 456.22 356.12 257.82 394.05 257.82" />
+                    <polygon
+                        points="711.61 210.63 708.33 207.35 664.74 250.94 691.29 277.49 691.29 473.32 626.61 439.75 626.61 259.9 641.09 245.43 606.29 210.63 603.02 207.35 559.43 250.94 585.97 277.49 585.97 473.32 521.3 439.75 521.3 259.9 535.77 245.43 500.98 210.63 497.7 207.35 454.11 250.94 480.66 277.49 480.66 476.1 538.67 521.66 588.79 478.31 643.98 521.66 696.65 476.1 731.93 476.1 731.93 259.9 746.4 245.43 711.61 210.63" />
+                    <polygon
+                        points="837.24 259.9 851.72 245.43 816.92 210.63 813.65 207.35 770.06 250.94 796.6 277.49 796.6 461.74 777.92 480.42 812.72 515.21 816 518.49 859.59 474.9 837.24 452.56 837.24 259.9" />
+                    <path
+                        d="M942.12,87.27V0s-9.18,37.2-20.32,53.09S876.9,93.3,876.9,93.3l24.58,33.1V461.74L882.8,480.42l34.8,34.79,3.27,3.28,43.59-43.59-22.34-22.34Z" />
+                    <polygon
+                        points="1044.38 259.9 1058.85 245.43 1024.06 210.63 1020.78 207.35 977.19 250.94 1003.74 277.49 1003.74 461.74 985.06 480.42 1019.85 515.21 1023.13 518.49 1066.72 474.9 1044.38 452.56 1044.38 259.9" />
+                    <polygon
+                        points="1453.4 265.56 1472.63 242.53 1394.08 211.07 1366.44 238.6 1412.76 265.56 1412.76 461.74 1394.08 480.42 1428.88 515.21 1432.15 518.49 1475.74 474.9 1453.4 452.56 1453.4 265.56" />
+                    <path
+                        d="M1352.46,151.36V57.68s-9.18,37.2-20.32,53.1-44.9,40.2-44.9,40.2l24.58,33.1V461.74l-18.68,18.68,34.79,34.79,3.28,3.28,43.59-43.59-22.34-22.34Z" />
+                    <path
+                        d="M1835.38,227.24H1565.49V195.77L1491,257.83h33.87V476.1l40.64,42.39,62.27-59.65s-28.68,6.12-39.16,6.28c-9.32.15-20.68-6.16-23.11-7.57V257.83h220.32l23.11,27.69,79.47-58.28Z" />
+                    <path
+                        d="M1250.64,476.1v-203l19.66-24.91L1172,202.76s-12.24,34.09-25.35,42.83-56.37,28-56.37,28l13.11,9.86V476.1l-13.11,15.52,60.31,26.87,39.33-27.75L1144,476.1V283.42l27.1-25.59L1210,288.41V490.74l43.7,48.94-33.21,31.91-71.67-42.39-61.18,44.57s24-5.24,36-1.75,43.48,35.84,53.53,38.46,25.79,1.75,32.78-2.62,80.62-75.17,83.14-82.6.32-21.41-6.67-28S1250.64,476.1,1250.64,476.1Z" />
+                    <polygon points="838.88 154.26 803.49 118.21 770.06 155.9 806.76 190.31 838.88 154.26" />
+                    <polygon points="1048.64 154.26 1013.24 118.21 979.81 155.9 1016.52 190.31 1048.64 154.26" />
+                    <path
+                        d="M743,613.8q20.18-26.49,20.18-63.39,0-29.64-11.59-52.21l-64,52.42-.18-.09c.11,1.42.18,2.87.18,4.36q0,44.24-51.77,44.24H607.86v-86l-75.62,66.57V752.82h75.62V653.14h.82L680,752.82h90.1L686.34,647.64Q722,641.94,743,613.8Z" />
+                    <path
+                        d="M962.14,630.52q0,13.46-.82,21.61a64.76,64.76,0,0,1-4.89,18.75q-8.56,18.55-33.43,18.55-24.06,0-33.43-19a62.35,62.35,0,0,1-5.5-19,153.69,153.69,0,0,1-1.23-21V527.45L804,596v34.52q0,16.71.81,27.31a141.9,141.9,0,0,0,4.08,23.85q6.52,23.45,26.09,44,15.9,16.92,40.77,25.48a147.53,147.53,0,0,0,48.11,7.54q53.61,0,86.43-33.43a100,100,0,0,0,25.48-43.62q5.3-19.56,5.3-51.16V591.31l-78.89-64.83Z" />
+                    <polygon
+                        points="1283.53 587.78 1284.41 637.25 1283.6 638.06 1264.04 606.26 1221.57 646.54 1288.08 752.82 1356.57 752.82 1356.57 593.96 1319.28 553.86 1283.53 587.78" />
+                    <polygon
+                        points="1113.22 604.42 1096.06 606.6 1096.06 752.82 1171.69 752.82 1170.46 650.53 1113.22 604.42" />
+                </svg>
+
+            </a>
+
+
+            <!-- Khu Ngôn ngữ + Đăng nhập | (Phải) -->
+            <div class="flex items-center lg:order-2 space-x-2 rtl:space-x-reverse">
+
+                <!-- NÚT NGÔN NGỮ -->
+                <button type="button" data-dropdown-toggle="language-dropdown-menu"
+                    class="inline-flex items-center font-medium justify-center text-sm text-white rounded-full border border-white/50 cursor-pointer hover:text-orange-500 focus:text-orange-500 focus:border-orange-500">
+                    <img class="w-8 h-8 rounded-full" src="../../../../img/Logo/CoAnh.png" alt="">
+                    <span class="pl-1 pr-2">ENG</span>
+                </button>
+                <!-- Dropdown NGÔN NGỮ -->
+                <div class="z-50 hidden my-4 text-base list-none divide-y divide-stone-100 rounded-lg shadow bg-stone-700"
+                    id="language-dropdown-menu">
+                    <ul class="py-2 font-medium" role="none">
+                        <li>
+                            <a href="../../../../html/VN/TraCo/TinTuc/TCTinTuc.html"
+                                class="block px-4 py-2 text-sm hover:bg-stone-600 text-stone-400 hover:text-white"
+                                role="menuitem">
+                                <div class="inline-flex items-center">
+                                    <img class="w-6 h-6 rounded-full" src="../../../../img/Logo/CoViet.png" alt="">
+                                    <span class="pl-2">Tiếng Việt (VN)</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../../../html/ENG/TraCo/News/TCNews.html"
+                                class="block px-4 py-2 text-sm hover:bg-stone-600 text-stone-400 hover:text-white"
+                                role="menuitem">
+                                <div class="inline-flex items-center">
+                                    <img class="w-6 h-6 rounded-full" src="../../../../img/Logo/CoAnh.png" alt="">
+                                    <span class="pl-2">English (ENG)</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- NÚT ĐĂNG NHẬP ĐĂNG KÝ -->
+                <button type="button"
+                    class="flex text-sm bg-stone-800 rounded-full lg:me-0 focus:ring-2 focus:ring-orange-500"
+                    id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                    data-dropdown-placement="bottom">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="w-8 h-8 rounded-full" src="../../../../img/ava/ava-01.jpg" alt="user photo">
+                </button>
+                <!-- Dropdown menu ĐĂNG NHẬP -->
+                <div class="z-50 hidden my-4 text-base list-none divide-y rounded-lg shadow bg-stone-700 divide-stone-600"
+                    id="user-dropdown">
+                    <div class="px-4 py-3">
+                        <span class="block text-sm text-white">Bonnie Green</span>
+                        <span class="block text-sm truncate text-stone-400">name@zaha.com</span>
+                    </div>
+                    <ul class="py-2" aria-labelledby="user-menu-button">
+                        <li>
+                            <a href="../../../../html/ENG/Register/LogIn/CusInformation.html"
+                                class="block px-4 py-2 text-sm hover:bg-stone-600 text-stone-400 hover:text-white">Information</a>
+                        </li>
+                        <li>
+                            <a href="../../../../html/ENG/SamSon/Home/SSHome.html"
+                                class="block px-4 py-2 text-sm hover:bg-stone-600 text-stone-400 hover:text-white">Sign
+                                Out</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button data-collapse-toggle="navbar-user" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden focus:outline-none border border-transparent text-stone-400 focus:text-orange-500 focus:border-orange-500"
+                    aria-controls="navbar-user" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+
+
+            <!-- Khu NAV text | (Giữa) -->
+            <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-user">
+                <ul
+                    class="flex flex-col font-medium p-4 lg:p-0 mt-4 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0">
+
+                    <!-- SẦM SƠN 2024 -->
+                    <li>
+                        <button id="SS-menu-dropdown-button" data-dropdown-toggle="SS-menu-dropdown"
+                            class="flex rounded-lg items-center justify-between w-full py-2 px-3 duration-500 font-medium lg:w-auto lg:p-1 text-white hover:text-orange-500 hover:bg-stone-700 lg:hover:bg-transparent focus:text-orange-500">
+                            Sam Son 2024
+                            <i class="fa-solid fa-angle-down pl-1"></i>
+                        </button>
+                        <div id="SS-menu-dropdown"
+                            class="absolute z-10 hidden w-auto text-sm bg-stone-800 rounded-lg shadow-lg">
+                            <div class="grid grid-cols-3">
+                                <div class="grid max-w-screen-xl p-4">
+                                    <div>
+                                        <a href="../../../../html/ENG/SamSon/Home/SSHome.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                Home</div>
+                                        </a>
+                                        <a href="../../../../html/ENG/SamSon/News/SSNews.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                News</div>
+                                        </a>
+                                        <a href="../../../../html/ENG/SamSon/Information/SSInformation.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                Information</div>
+                                        </a>
+                                        <a href="../../../../html/ENG/SamSon/Partner/SSPartner.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                Partner</div>
+                                        </a>
+                                        <a href="../../../../html/ENG/SamSon/Distance/SSDistance.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                Distance</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid max-w-screen-xl p-4 col-span-2">
+                                    <a href="../../../../html/ENG/Register/Register/Register.html"
+                                        class="p-8 duration-500 bg-local bg-stone-500 bg-center bg-cover rounded-lg bg-blend-multiply hover:bg-stone-300"
+                                        style="background-image: url(../../../../img/anhWeb/banner-4.jpeg)">
+                                        <p
+                                            class="max-w-xl mb-2 font-extrabold leading-tight tracking-tight text-white text-lg">
+                                            Sam Son Twilight Run 2024
+                                        </p>
+                                        <p class="max-w-xl mb-5 font-extrabold leading-tight tracking-tight text-white">
+                                            Register for your favorite distance to experience the race.
+                                        </p>
+                                        <button type="button"
+                                            class="inline-flex items-center px-4 py-3 duration-500 font-medium text-center text-white border border-white rounded-lg hover:bg-orange-500 focus:ring-1 focus:outline-none focus:ring-white">
+                                            Register now
+                                            <i class="fa-solid fa-angles-right pl-1"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- TRÀ CỔ 2024 -->
+                    <li>
+                        <button id="TC-menu-dropdown-button" data-dropdown-toggle="TC-menu-dropdown"
+                            class="flex rounded-lg items-center justify-between w-full py-2 px-3 duration-500 font-medium lg:w-auto lg:p-1 text-yellow-500 hover:text-orange-500 hover:bg-stone-700 lg:hover:bg-transparent focus:text-orange-500">
+                            Tra Co 2024
+                            <i class="fa-solid fa-angle-down pl-1"></i>
+                        </button>
+                        <div id="TC-menu-dropdown"
+                            class="absolute z-10 hidden w-auto text-sm bg-stone-800 rounded-lg shadow-lg">
+                            <div class="grid grid-cols-3">
+                                <div class="grid max-w-screen-xl p-4">
+                                    <div>
+                                        <a href="../../../../html/ENG/TraCo/Home/TCHome.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                Home</div>
+                                        </a>
+                                        <a href="../../../../html/ENG/TraCo/News/TCNews.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-yellow-500 hover:text-orange-500">
+                                                News</div>
+                                        </a>
+                                        <a href="../../../../html/ENG/TraCo/Information/TCInformation.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                Information</div>
+                                        </a>
+                                        <a href="../../../../html/ENG/TraCo/Partner/TCPartner.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                Partner</div>
+                                        </a>
+                                        <a href="../../../../html/ENG/TraCo/Distance/TCDistance.html">
+                                            <div
+                                                class="p-2 rounded-lg duration-500 bg-transparent hover:bg-stone-700 text-stone-300 hover:text-orange-500">
+                                                Distance</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid max-w-screen-xl p-4 col-span-2">
+                                    <a href="../../../../html/ENG/Register/Register/Register.html"
+                                        class="p-8 duration-500 bg-local bg-stone-500 bg-center bg-cover rounded-lg bg-blend-multiply hover:bg-stone-300"
+                                        style="background-image: url(../../../../img/anhWeb/anh-10.jpeg)">
+                                        <p
+                                            class="max-w-xl mb-2 font-extrabold leading-tight tracking-tight text-white text-lg">
+                                            Tra Co Twilight Run 2024
+                                        </p>
+                                        <p class="max-w-xl mb-5 font-extrabold leading-tight tracking-tight text-white">
+                                            Register for your favorite distance to experience the race.
+                                        </p>
+                                        <button type="button"
+                                            class="inline-flex items-center px-4 py-3 duration-500 font-medium text-center text-white border border-white rounded-lg hover:bg-orange-500 focus:ring-1 focus:outline-none focus:ring-white">
+                                            Register now
+                                            <i class="fa-solid fa-angles-right pl-1"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- VỀ CHÚNG TÔI + MUA BIB -->
+                    <li>
+                        <a href="../../../../html/ENG/Register/AboutUs/aboutUs.html"
+                            class="block py-2 px-3 rounded-lg duration-500 lg:p-1 text-white hover:text-orange-500 hover:bg-stone-700 lg:hover:bg-transparent">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="../../../../html/ENG/Register/Register/Register.html"
+                            class="block py-2 px-3 rounded-lg duration-500 lg:py-1 text-white hover:text-orange-500 bg-orange-500 hover:bg-white lg:hover:bg-text-orange-700">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- P1 -->
+
+    <section class="duration-500 bg-center bg-cover bg-local bg-stone-500 bg-blend-multiply hover:bg-stone-300" style="background-image: url(../../../../img/anhWeb/banner-11.webp); height: 350px;">
+        <div class="text-center pt-24 text-white">
+            <p class="font-bold text-2xl md:text-3xl">Tra Co Twilight Run</p>
+            <p class="font-bold text-5xl md:text-7xl text-yellow-500">COMING SOON</p>
+            <p class="mt-6">Please come back later</p>
+            <!-- <p class="mb-6">Location: Sea Square Sam Son - Thanh Hoa</p>
+            <a href="../../../../html/ENG/Register/Register/Register.html">
+                <button type="button" class="nutDangKy focus:ring-2 focus:ring-white">Register Now</button>
+            </a> -->
+        </div>
+    </section>
+    <div class="bg-orange-500 w-full h-3">
+    </div>
+
+
+
+
+
+
+
+    <!-- New -->
+
+    <section class="max-w-screen-xl m-auto pb-32">
+
+        <h2 class="uppercase font-bold text-3xl text-center mt-16 mb-12 md:text-5xl text-orange-500">News</h2>
+        <!-- <div class="grid grid-cols-1 xl:grid-cols-2 gap-16 p-4 xl:p-0">
+            <div class="">
+                <a href="../../../../html/ENG/SamSon/News/SS100Year.html"
+                    class="grid grid-cols-2 items-center w-full duration-500 text-white bg-orange-500 border border-stone-200 rounded-lg shadow hover:bg-orange-700 mb-4">
+                    <div class="w-full h-48 xl:grid-cols-3 duration-500 bg-center bg-cover rounded-lg bg-local bg-stone-50 bg-blend-multiply hover:bg-stone-300"
+                        style="background-image: url(../../../../img/TinTuc/Tin_SS100nam_1.jpeg)">
+                    </div>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight">Sam Son 100 years ago</h5>
+                        <p>Sam Son beach was developed by the French into a resort to serve ...</p>
+                    </div>
+                </a>
+                <a href="../../../../html/ENG/SamSon/News/Travel.html"
+                    class="grid grid-cols-2 items-center w-full duration-500 text-white bg-orange-500 border border-stone-200 rounded-lg shadow hover:bg-orange-700 mb-4">
+                    <div class="w-full h-48 xl:grid-cols-3 duration-500 bg-center bg-cover rounded-lg bg-local bg-stone-50 bg-blend-multiply hover:bg-stone-300"
+                        style="background-image: url(../../../../img/TinTuc/Tin_DuLich_1.jpeg)">
+                    </div>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight">Sam Son Travel Guide</h5>
+                        <p>In addition to its beautiful beaches, Sam Son also boasts a variety ...</p>
+                    </div>
+                </a>
+                <a href="../../../../html/ENG/SamSon/News/DocCuoc.html"
+                    class="grid grid-cols-2 items-center w-full duration-500 text-white bg-orange-500 border border-stone-200 rounded-lg shadow hover:bg-orange-700 mb-4">
+                    <div class="w-full h-48 xl:grid-cols-3 duration-500 bg-center bg-cover rounded-lg bg-local bg-stone-50 bg-blend-multiply hover:bg-stone-300"
+                        style="background-image: url(../../../../img/TinTuc/Tin_DenDocCuoc_2.jpeg)">
+                    </div>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight">Sacred Doc Cuoc Temple</h5>
+                        <p>Temple Doc Cuoc, also known as Temple Thuong, is located on the top of Mount Co Giai in the Truong Le mountain range ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="">
+                <a href="../../../../html/ENG/SamSon/News/SunGroup.html"
+                    class="grid grid-cols-2 items-center w-full duration-500 text-white bg-orange-500 border border-stone-200 rounded-lg shadow hover:bg-orange-700 mb-4">
+                    <div class="w-full h-48 xl:grid-cols-3 duration-500 bg-center bg-cover rounded-lg bg-local bg-stone-50 bg-blend-multiply hover:bg-stone-300"
+                        style="background-image: url(../../../../img/TinTuc/Tin_SunGroup_2.jpeg)">
+                    </div>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight">Sun Group Ocean Square</h5>
+                        <p>Sun Group has unveiled its 280-hectare Ocean Square urban complex in Sam Son ...</p>
+                    </div>
+                </a>
+                <a href="../../../../html/ENG/SamSon/News/Festival.html"
+                    class="grid grid-cols-2 items-center w-full duration-500 text-white bg-orange-500 border border-stone-200 rounded-lg shadow hover:bg-orange-700 mb-4">
+                    <div class="w-full h-48 xl:grid-cols-3 duration-500 bg-center bg-cover rounded-lg bg-local bg-stone-50 bg-blend-multiply hover:bg-stone-300"
+                        style="background-image: url(../../../../img/TinTuc/Tin_LeHoi_1.jpeg)">
+                    </div>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight">City of Sam Son Festival</h5>
+                        <p>Sam Son will be ablaze with fireworks on the 2024 Sea Tourism Festival ...</p>
+                    </div>
+                </a>
+                <a href="../../../../html/ENG/SamSon/News/Sea.html"
+                    class="grid grid-cols-2 items-center w-full duration-500 text-white bg-orange-500 border border-stone-200 rounded-lg shadow hover:bg-orange-700 mb-4">
+                    <div class="w-full h-48 xl:grid-cols-3 duration-500 bg-center bg-cover rounded-lg bg-local bg-stone-50 bg-blend-multiply hover:bg-stone-300"
+                        style="background-image: url(../../../../img/TinTuc/Tin_Bien_1.png)">
+                    </div>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight">Sea and Sun</h5>
+                        <p>Sam Son is the most famous beach in Thanh Hoa ...</p>
+                    </div>
+                </a>
+            </div>
+        </div> -->
+    </section>
+
+
+
+    <!-- footer -->
+
+
+
+    <footer class="bg-black">
+
+        <!-- icon -->
+        <div class="bg-orange-500 w-full p-2">
+            <div class="flex justify-center sm:mt-0 text-2xl">
+                <a href="" class="duration-500 text-white hover:text-orange-800">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="" class="duration-500 text-white hover:text-orange-800 ms-10">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="" class="duration-500 text-white hover:text-orange-800 ms-10">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+
+            <!-- Logo BTC + NTT -->
+            <!-- <div>
+                <h2 class="uppercase font-bold text-2xl text-center mt-16 mb-6 md:text-3xl text-orange-500">Organizers
+                </h2>
+                <div class="flex flex-row flex-wrap gap-8 p-4 xl:p-0 justify-center uppercase">
+                    <div class="max-w-sm duration-500 bg-orange-500 hover:bg-orange-800 rounded-lg shadow">
+                        <a href="">
+                            <img class="rounded-t-lg h-20 md:h-28" src="../../../../img/Logo/logoBTC-01.png" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <p class="text-center text-sm text-white">Organizer</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm duration-500 bg-orange-500 hover:bg-orange-800 rounded-lg shadow">
+                        <a href="">
+                            <img class="rounded-t-lg h-20 md:h-28" src="../../../../img/Logo/logoBTC-02.png" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <p class="text-center text-sm text-white">Organizer</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm duration-500 bg-orange-500 hover:bg-orange-800 rounded-lg shadow">
+                        <a href="">
+                            <img class="rounded-t-lg h-20 md:h-28" src="../../../../img/Logo/logoBTC-03.png" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <p class="text-center text-sm text-white">Organizer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="uppercase font-bold text-2xl text-center mt-20 mb-6 md:text-3xl text-white">Partners
+                </h2>
+                <div class="flex flex-row flex-wrap gap-8 p-4 xl:p-0 justify-center uppercase">
+                    <div class="max-w-sm duration-500 bg-stone-700 hover:bg-stone-400 rounded-lg shadow">
+                        <a href="">
+                            <img class="rounded-t-lg h-20 md:h-28" src="../../../../img/Logo/LogoNTT-01.png" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <p class="text-center text-sm text-white">Partner</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm duration-500 bg-stone-700 hover:bg-stone-400 rounded-lg shadow">
+                        <a href="">
+                            <img class="rounded-t-lg h-20 md:h-28" src="../../../../img/Logo/LogoNTT-02.png" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <p class="text-center text-sm text-white">Partner</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm duration-500 bg-stone-700 hover:bg-stone-400 rounded-lg shadow">
+                        <a href="">
+                            <img class="rounded-t-lg h-20 md:h-28" src="../../../../img/Logo/LogoNTT-03.png" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <p class="text-center text-sm text-white">Partner</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm duration-500 bg-stone-700 hover:bg-stone-400 rounded-lg shadow">
+                        <a href="">
+                            <img class="rounded-t-lg h-20 md:h-28" src="../../../../img/Logo/LogoNTT-04.png" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <p class="text-center text-sm text-white">Partner</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm duration-500 bg-stone-700 hover:bg-stone-400 rounded-lg shadow">
+                        <a href="">
+                            <img class="rounded-t-lg h-20 md:h-28" src="../../../../img/Logo/LogoNTT-05.png" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <p class="text-center text-sm text-white">Partner</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="../../../../html/ENG/SamSon/Partner/SSPartner.html">
+                    <div class="duration-500 text-center mt-10 mb-20 text-xl text-stone-500 hover:text-orange-500">
+                        <p>Partner with Us - Together We Create a Sustainable Future</p>
+                        <p>Phone: 08.45678.880 | Email: zaha.vn.run@gmail.com</p>
+                    </div>
+                </a>
+            </div> -->
+
+
+
+            <!-- footer -->
+            <hr class="my-6 sm:mx-auto border-stone-700 lg:my-8" />
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="../../../../html/ENG/Register/AboutUs/aboutUs.html" class="flex items-center">
+                        <img src="../../../../img/Logo/iconTLNA2.png" class="h-8 me-3" alt="FlowBite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">ZAHA
+                            VIETNAM</span>
+                    </a>
+                    <!-- <p class="text-center text-xl mt-4 text-white">Liên hệ</p> -->
+                    <ul class="text-stone-500 font-medium mt-4">
+                        <li>
+                            <a href="">Address: 11 Thuy Khue Street, Tay Ho District, City. Hanoi</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:text-orange-500">Phone: 08.45678.880</a>
+                        </li>
+                        <li class="mb-6">
+                            <a href="" class="hover:text-orange-500">Email: zaha.vn.run@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="">Enterprise code:: 0110699415</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase text-white">Racing System</h2>
+                        <ul class="text-stone-500 font-medium">
+                            <li class="mb-4">
+                                <a href="../../../../html/ENG/SamSon/Home/SSHome.html"
+                                    class="hover:text-orange-500 ">Sam Son
+                                    Twilight Run</a>
+                            </li>
+                            <li>
+                                <a href="../../../../html/ENG/TraCo/Home/TCHome.html"
+                                    class="hover:text-orange-500">Tra Co
+                                    Twilight Run</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase text-white">Information</h2>
+                        <ul class="text-stone-400 font-medium">
+                            <li class="mb-4"><a href="../../../../html/ENG/Register/AboutUs/aboutUs.html"
+                                    class="hover:text-orange-500">About Us</a></li>
+                            <li class="mb-4"><a href="../../../../html/ENG/SamSon/News/SSNews.html"
+                                    class="hover:text-orange-500">News</a></li>
+                            <li class="mb-4"><a href="../../../../html/ENG/SamSon/Information/SSInformation.html"
+                                    class="hover:text-orange-500">Regulations</a></li>
+                            <li><a href="../../../../html/ENG/SamSon/Information/SSInformation.html"
+                                    class="hover:text-orange-500">Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 sm:mx-auto border-stone-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm sm:text-center text-stone-500">
+                    Copyright © 2024
+                    <a href="../../../../html/ENG/Register/AboutUs/aboutUs.html" class="hover:text-orange-500">Zaha
+                        Vietnam</a>
+                    . All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-stone-500 hover:text-orange-500">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-stone-500 hover:text-orange-500 ms-5">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-stone-500 hover:text-orange-500 ms-5">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- BACKTOTOP -->
+    <!-- text-replace -->
+    <a href="" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!-- ----------------------- * ---------------------- -->
+
+    <!-- JS HTML -->
+
+
+    <!-- CDN JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <!-- Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <!-- BACKTOTOP -->
+    <script src="../../../../JS/util.js"></script>
+    <script src="../../../../JS/main.js"></script>
+
+</body>
+
+</html>
